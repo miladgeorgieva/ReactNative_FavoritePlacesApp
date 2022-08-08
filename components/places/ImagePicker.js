@@ -15,7 +15,7 @@ function ImagePicker() {
         }
 
         if (cameraPermissionInformation.status === PermissionStatus.DENIED) {
-            Alert.alert("Insufficient ermissions", "You need to grant camera permissions to use this app.");
+            Alert.alert("Insufficient permissions", "You need to grant camera permissions to use this app.");
             return false;
         }
 
@@ -66,7 +66,8 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: Colors.primary100,
-        borderRadius: 4
+        borderRadius: 4,
+        overflow: 'hidden'
     },
     image: {
         width: '100%',
