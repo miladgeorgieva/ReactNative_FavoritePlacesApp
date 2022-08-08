@@ -23,9 +23,8 @@ export default function App() {
           <Stack.Screen
             name="AllPlaces"
             component={AllPlaces}
-        
             options={({ navigation }) => ({
-              itle: "Your favorite places",
+              title: "Your favorite places",
               headerRight: ({ tintColor }) => <IconButton
                 icon="add"
                 size={24}
